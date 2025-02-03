@@ -9,81 +9,25 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Basic Styling - Customize as needed */
-        body {
-            font-family: sans-serif;
-        }
-
-        .section {
-            padding: 40px 0;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-
-        .profile-card,
-        .education-card,
-        .project-card,
-        .skills-card,
-        .contact-card {
-            border: 1px solid #163801d8;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .profile-card img {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-
-        .skill-bar {
-            background-color: #f0f0f0;
-            height: 20px;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-
-        .skill-level {
-            background-color: #7fb5ef;
-            height: 100%;
-            width: 70%;
-            border-radius: 5px;
-        }
-
-        /* Contact Form Styling */
-        .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        .contact-form button {
-            background-color: #0084ff;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 
 <body>
+
+   <!-- Navigation Bar -->
+   <nav>
+    <div class="logo">
+        <h1>NARESH R</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+
 
     <section class="section" id="profile">
         <div class="container">
@@ -129,14 +73,13 @@
             <div class="project-card">
                 <div class="project-image-container">
                    <center><img src="chat.gif" alt="Project 2 Image"></center>
-                                </div>
+                </div>
                 <h3>Login page design</h3>
                 <p>Username and Password Input*: Users can enter their credentials to access their accounts.
                     Forgot Password: Users can reset their passwords if they forget them.
                     Create Account: New users can register for an account.
                     Secure Authentication: The system will use encryption and secure protocols to protect user data.</p>
             </div>
-    
     
         </div>
     </section>
@@ -156,16 +99,18 @@
                     <div class="skill-bar">
                         <div class="skill-level" style="width: 75%;"></div>
                     </div>
-                    <div class="skill">
-                        <h4>Java</h4>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 60%;"></div>
-                     </div>
-                     <div class="skill">
-                        <h4>Python</h4>
-                        <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%;"></div>
-                        </div>
+                </div>
+                <div class="skill">
+                    <h4>Java</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h4>Python</h4>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%;"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,11 +131,11 @@
                     <textarea id="message" name="message" rows="4" required></textarea>
 
                     <button type="submit">Send Message</button>
+                    
                 </form>
             </div>
         </div>
     </section>
-
 
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
